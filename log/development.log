@@ -191,3 +191,54 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 22:39:30 -0200
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 10:15:52 -0200
+  Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-12-01 10:15:52 -0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/flores/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/devise-1.5.2/app/views/devise/shared/_links.erb (1.2ms)
+Rendered /Users/flores/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/devise-1.5.2/app/views/devise/sessions/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 51ms (Views: 14.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 10:15:53 -0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 10:15:53 -0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 10:15:53 -0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 10:15:53 -0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-12-12 22:03:59 -0200
+
+LoadError (Expected /Users/flores/Code/devise-timeout/app/controllers/users/registrations_controller.rb to define Users::RegistrationsController):
+  
+
+Rendered /Users/flores/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/flores/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/flores/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-12-12 22:04:41 -0200
+  Processing by Users::RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 139ms
+
+ActionView::MissingTemplate (Missing template users/registrations/new with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/flores/Code/devise-timeout/app/views"
+  * "/Users/flores/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/devise-1.5.2/app/views"
+):
+  
+
+Rendered /Users/flores/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
